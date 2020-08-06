@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from '../components/core/Home';
 import Api from '../utils/Api';
-import Config from '../Config';
+//import Config from '../Config';
 
 class HomeContainer extends React.Component {
 constructor(props) {
@@ -23,6 +23,13 @@ componentDidMount() {
       this.setState({
           cities: data.results
       })
+    });
+    Api.getHome()
+    .then((cities) => {
+        this.setState({
+            cities
+        })
+        
     });
 }
 
