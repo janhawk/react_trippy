@@ -17,7 +17,14 @@ const Global = {
         header : 22,
         navbar : 50,
 
-    }
+    },
+    weight: {
+        body : 400,
+        caption : 200,
+        header : 700,
+       
+
+    },
 
 };
 export default Global;
