@@ -8,9 +8,11 @@ class Api {
         return fetch(url)
         .then(res => res.json())
         .then (res => {
-            return res.results;
+            return res.cities;
         });
 }}
 
 
 export default new Api();
+
+

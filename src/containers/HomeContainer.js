@@ -11,31 +11,33 @@ constructor(props) {
     };
 }
 
-componentDidMount() {
-    const url = 'http://localhost:3001/api/home';
-    fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        console.log('data',data);
-      // code
-      const cities = data.results;
-      console.log(cities);
-      this.setState({
-          cities: data.results
-      })
-    });
-    Api.getHome()
-    .then((cities) => {
-        this.setState({
-            cities
-        })
+// componentDidMount() {
+//     const url = 'http://localhost:3001/api/home';
+//     fetch(url)
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log('data',data);
+//       // code
+//       const cities = data.results;
+//       console.log(cities);
+//       this.setState({
+//           cities: data.results
+//       })
+//     });
+//     Api.getHome()
+//     .then((cities) => {
         
-    });
-}
+//         this.setState({
+//             cities
+//         })
+        
+//     });
+// }
+       
 
 
   render() {
-
+console.log(Api.getHome())
     return (
         <div>
       <Home  
