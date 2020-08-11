@@ -7,8 +7,11 @@ class Api {
 
         return fetch(url)
         .then(res => res.json())
-        .then (res => {
-            return res.cities;
+        .then (data => {
+            console.log('data', data);
+            const cities = data.cities;
+            console.log(cities);
+            return data.cities;
         });
 }}
 
