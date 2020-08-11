@@ -9,7 +9,7 @@ class Home extends React.Component {
         this.state = {
             name: '',
             slug: '',
-            source: 'http://via.placeholder.com/300x200'
+            source: ''
         }
     }
     render() {

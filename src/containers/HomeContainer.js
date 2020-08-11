@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from '../components/core/Home';
 import Api from '../utils/Api';
-//import Config from '../Config';
+import Card from '../components/city/Card'
+// import Config from '../Config';
 
 class HomeContainer extends React.Component {
 constructor(props) {
@@ -35,6 +36,7 @@ componentDidMount() {
   render() {
     return (      
       <div>
+        <Card />
         <Home />
         Test
         {this.state.cities.map((city) => {
