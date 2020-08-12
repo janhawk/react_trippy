@@ -14,23 +14,19 @@ class Home extends React.Component {
     }
     render() {
         // if (this.props.cities.length > 0) {
-        //     return (
-                
-        //             <Card 
-        //                 name = {this.props.cities[0].name}
-        //                 slug = {this.props.cities[0].slug}
-        //                 source = {this.props.cities[0].source}
-        //             />
-                
-        //     )
+        //         return(<div>loading...</div>);
         // }
-        return(
-            <Card
-            // name = {this.props.cities[0].name}
-            //             slug = {this.props.cities[0].slug}
-            //             source = {this.props.cities[0].source}
-            />
-        );
-    }
+            return (
+                <div></div>
+                    // <Card 
+                    //     name = {this.props.cities[0].name}
+                    //     slug = {this.props.cities[0].slug}
+                    //     source = {this.props.cities[0].source}
+                    // />
+                
+            );
+        }
+
+
 }
 export default Home;

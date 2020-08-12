@@ -5,15 +5,15 @@ import Api from '../../utils/Api';
 
 class Card extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
+    constructor(props) {
+        super(props);
     
-    //     this.state = {
-    //       source: 'http://via.placeholder.com/300x200',
-    //       name: '',
-    //       slug: ''
-    //     };
-    //   }
+        this.state = {
+          source: 'http://via.placeholder.com/300x200',
+          name: '',
+          slug: ''
+        };
+      }
     componentDidMount() {
       Api.getHome()
       .then(cities => {
@@ -34,19 +34,13 @@ class Card extends React.Component {
       } = this.props;
         return(
           <div>
-            <h3>
-              {name}
-            </h3>
-            <p>
-              <img src= {source} alt="placeholder" />
-              
-            </p>
-            <p>
-              {slug}
-            </p>
             
-           
-          </div>
+            <h1>{name}</h1>
+            <img src={source}/>
+            <h3>{slug}</h3>
+            
+            
+          </div> 
         );
     }
 }
